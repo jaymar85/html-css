@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #title {
+            width: 100%;
+            height: 200px;
+            margin: 30px auto;
+            font-size: 30px;
+            background-color: whitesmoke;
+            border-radius: 3px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0 0.08);
+            font-family: "Helvtica Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            /* Solution 1 */
+            /* line-height: 200px; */
+        }
+        /* Solution 2 */
+        p {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <p>Title</p>
+    </div>
+</body>
+</html>

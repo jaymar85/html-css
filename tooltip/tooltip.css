@@ -1,0 +1,10 @@
+.tooltip {
+  padding: 100px;
+  position: relative;
+  border: 2px solid green;
+  margin: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.tooltip-text {}

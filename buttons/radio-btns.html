@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Radio Group using labels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+      body {
+        background: #332f35;
+        font-family: roboto;
+    }
+
+        input[type=radio] {
+        position: absolute;
+        visibility: hidden;
+        display: none;
+    }
+
+    label {
+        color: lighten(#332f35,40%);
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 5px 20px;
+    }
+
+    input[type=radio]:checked + label{
+        color: lighten(#332f35,60%);
+        background: lighten(#332f35,20%);;
+    }
+
+    label + input[type=radio] + label {
+        border-left: solid 3px lighten(#332f35,20%);
+    }
+    
+    .radio-group {
+        border: solid 3px lighten(#332f35,20%);
+        display: inline-block;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    @import url('http://fonts.googleapis.com/css?family=Roboto');
+  </style>
+</head>
+<body>
+  <form>
+    <div class="radio-group">
+      <input type="radio" id="option-one" name="selector">
+      <label for="option-one">Yes</label>
+      <input type="radio" id="option-two" name="selector">
+      <label for="option-two">No</label>
+      <!-- <input type="radio" id="option-three" name="selector">
+      <label for="option-three">Three</label> -->
+    </div>
+  </form>
+</body>
+</html>
