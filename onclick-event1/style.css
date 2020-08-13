@@ -12,7 +12,7 @@ body {
     color: #444;
     margin: 0 auto;
     /* Content box when it is shrinked */
-    max-height: 240px;
+    max-height: 230px;
     overflow: hidden;
     transition: max-height 0.7s;
 }
